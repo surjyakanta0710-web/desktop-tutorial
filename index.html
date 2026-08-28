@@ -1,13 +1,188 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cinewave — Watch something extraordinary</title><style>
-:root{--bg:#080910;--panel:#151724;--text:#f8f8fc;--muted:#aaaebe;--pink:#ff4d79;--violet:#9275ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}.shell{width:min(1280px,calc(100% - 44px));margin:auto}nav{height:78px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}.brand{font-size:1.35rem;font-weight:900;letter-spacing:-.07em}.brand i{display:inline-grid;place-items:center;width:28px;height:28px;margin-right:8px;border-radius:9px;background:linear-gradient(135deg,var(--pink),var(--violet));font-style:normal;font-size:12px}.links{display:flex;gap:25px;color:#c6c8d4;font-weight:700;font-size:.9rem}.links a{color:inherit;text-decoration:none}.avatar{width:36px;height:36px;border:2px solid #fff8;border-radius:50%;background:linear-gradient(135deg,#ffd4b1,#a77cff)}.hero{height:590px;margin-top:-78px;position:relative;display:flex;align-items:end;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 76% 25%,#d96ee880,transparent 19%),radial-gradient(circle at 64% 62%,#276dff70,transparent 32%),linear-gradient(90deg,#080910 4%,#080910b5 38%,#08091005 80%,#080910)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#080910,transparent 40%)}.planet{position:absolute;width:430px;height:430px;right:11%;top:100px;border-radius:50%;background:radial-gradient(circle at 34% 29%,#ffe5d2 0 3%,#d99eda 14%,#745ba8 33%,#1e1949 62%,#080813 73%);box-shadow:0 0 80px 18px #8f58ff55}.ring{position:absolute;width:710px;height:160px;right:-3%;top:275px;border:17px solid #eacbff88;border-radius:50%;transform:rotate(-18deg)}.copy{position:relative;z-index:1;padding-bottom:72px;max-width:540px}.tag{display:inline-block;padding:7px 10px;border:1px solid #ff81a199;border-radius:999px;background:#ff4d7925;color:#ffc4d1;font-size:.72rem;font-weight:900;letter-spacing:.08em}.copy h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.86;letter-spacing:-.08em;margin:17px 0}.copy p{color:#dedee7;line-height:1.65;max-width:500px}.btn{padding:13px 18px;border:0;border-radius:11px;margin:10px 8px 0 0;font-weight:850}.watch{background:#fff;color:#13141e}.list{color:#fff;border:1px solid #fff5;background:#171824a8}.tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:25px 0}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid #ffffff24;border-radius:99px;padding:9px 13px;color:#c5c7d6;background:transparent;font-size:.82rem;font-weight:800}.filter.active,.filter:hover{background:#fff;color:#151622}.search{width:230px;padding:11px 13px;color:white;background:#13141e;border:1px solid #ffffff24;border-radius:10px;outline:none}section{margin:42px 0}h2{font-size:1.35rem;letter-spacing:-.04em}.row{display:grid;grid-auto-flow:column;grid-auto-columns:204px;gap:15px;overflow-x:auto;padding-bottom:14px}.card{height:275px;position:relative;border-radius:15px;overflow:hidden;background:var(--art);transition:.25s;border:1px solid transparent}.card:hover{transform:translateY(-7px);border-color:#fff8}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#05060be8,transparent 60%)}.c1{--art:radial-gradient(circle at 25% 20%,#f7ddca 0 5%,transparent 6%),linear-gradient(140deg,#f54b6d,#291959 75%)}.c2{--art:radial-gradient(circle at 58% 31%,#d2e7ff 0 13%,transparent 14%),linear-gradient(150deg,#293c71,#0f152e 70%)}.c3{--art:linear-gradient(45deg,transparent 38%,#ffb36188 39% 42%,transparent 43%),linear-gradient(135deg,#292146,#bd4d70)}.c4{--art:radial-gradient(ellipse at 62% 75%,#eabd75 0 13%,transparent 14%),linear-gradient(150deg,#4d251a,#121829)}.c5{--art:radial-gradient(circle at 30% 25%,#e6b8ff 0 8%,transparent 9%),linear-gradient(135deg,#2e184f,#0d4857)}.meta{position:absolute;z-index:1;left:14px;bottom:13px}.meta b{display:block;font-size:1rem}.meta span{font-size:.74rem;color:#d2d2da}.score{position:absolute;z-index:1;top:10px;right:10px;background:#06070a99;padding:5px 7px;border-radius:7px;color:#ffe77a;font-size:.75rem;font-weight:800}.add{position:absolute;z-index:2;right:10px;bottom:12px;width:30px;height:30px;border:0;border-radius:50%;font-size:18px;background:#fff;color:#171824}.add.saved{background:#79e5b8}.feature{display:grid;grid-template-columns:1.2fr .8fr;overflow:hidden;border:1px solid #ffffff20;border-radius:19px;background:linear-gradient(110deg,#25124d,#101936 65%)}.feature .text{padding:33px}.feature p{color:var(--muted);line-height:1.6}.progress{height:5px;max-width:340px;background:#fff3;border-radius:9px}.progress i{display:block;width:63%;height:100%;background:linear-gradient(90deg,var(--pink),#ffbd73);border-radius:9px}.art{min-height:200px;background:radial-gradient(circle at 55% 46%,#d8b3ff 0 4%,transparent 5%),radial-gradient(circle at 56% 46%,#7958d2 0 26%,transparent 27%),linear-gradient(135deg,transparent,#281149);display:grid;place-items:center}.art button{width:58px;height:58px;border:0;border-radius:50%;font-size:17px;color:#2a1551;background:#fff}.toast{position:fixed;right:22px;bottom:22px;padding:13px 16px;background:#fff;color:#151622;border-radius:10px;font-weight:800;transform:translateY(90px);transition:.3s}.toast.show{transform:none}footer{border-top:1px solid #ffffff18;padding:30px 0;color:#898c9d;font-size:.82rem;display:flex;justify-content:space-between;margin-top:65px}@media(max-width:700px){.shell{width:min(100% - 28px,1280px)}.links{display:none}.hero{height:540px}.planet{right:-180px}.ring{right:-250px}.copy{padding-bottom:45px}.tools{align-items:stretch;flex-direction:column}.search{width:100%}.feature{grid-template-columns:1fr}.row{grid-auto-columns:178px}.card{height:245px}footer{flex-direction:column;gap:12px}}
-</style></head><body>
-<header class="shell"><nav><div class="brand"><i>▶</i>cinewave</div><div class="links"><a href="#discover">Discover</a><a href="#series">Series</a><a href="#list">My List</a></div><div class="avatar"></div></nav></header>
-<section class="hero"><div class="planet"></div><div class="ring"></div><div class="shell copy"><span class="tag">CINEWAVE ORIGINAL</span><h1>Beyond the<br>known.</h1><p>When a signal arrives from the edge of the solar system, one crew must decide whether humanity is ready for the answer.</p><button class="btn watch" id="watch">▶ &nbsp;Watch now</button><button class="btn list" id="heroSave">＋ My List</button></div></section>
-<main class="shell" id="discover"><div class="tools"><div class="filters"><button class="filter active" data-g="all">For you</button><button class="filter" data-g="drama">Drama</button><button class="filter" data-g="sci-fi">Sci-fi</button><button class="filter" data-g="thriller">Thriller</button><button class="filter" data-g="documentary">Documentary</button></div><input class="search" id="search" placeholder="Search titles…"></div>
-<section><h2>Trending tonight</h2><div class="row" id="titles"><article class="card c1" data-g="drama" data-t="Afterlight"><span class="score">★ 8.9</span><div class="meta"><b>Afterlight</b><span>2026 · Drama</span></div><button class="add">＋</button></article><article class="card c2" data-g="sci-fi" data-t="Parallel"><span class="score">★ 9.1</span><div class="meta"><b>Parallel</b><span>2025 · Sci-fi</span></div><button class="add">＋</button></article><article class="card c3" data-g="thriller" data-t="The Last Call"><span class="score">★ 8.6</span><div class="meta"><b>The Last Call</b><span>2026 · Thriller</span></div><button class="add">＋</button></article><article class="card c4" data-g="drama" data-t="Sundown City"><span class="score">★ 8.4</span><div class="meta"><b>Sundown City</b><span>2025 · Drama</span></div><button class="add">＋</button></article><article class="card c5" data-g="sci-fi" data-t="Glass Orbit"><span class="score">★ 8.8</span><div class="meta"><b>Glass Orbit</b><span>2026 · Sci-fi</span></div><button class="add">＋</button></article></div></section>
-<section class="feature" id="series"><div class="text"><span class="tag">CONTINUE WATCHING</span><h2 style="font-size:1.8rem">Dark matter, episode 4</h2><p>A memory surfaces. The crew changes course. Nothing will look the same again.</p><div class="progress"><i></i></div><small style="color:#aaa">32 min left</small></div><div class="art"><button id="continue">▶</button></div></section>
-<section id="list"><h2>Because you watched Parallel</h2><div class="row"><article class="card c5" data-g="sci-fi" data-t="The Signal"><span class="score">★ 8.7</span><div class="meta"><b>The Signal</b><span>2026 · Sci-fi</span></div><button class="add">＋</button></article><article class="card c3" data-g="thriller" data-t="Morrow"><span class="score">★ 8.5</span><div class="meta"><b>Morrow</b><span>2025 · Thriller</span></div><button class="add">＋</button></article><article class="card c2" data-g="sci-fi" data-t="Blue Hour"><span class="score">★ 8.8</span><div class="meta"><b>Blue Hour</b><span>2026 · Sci-fi</span></div><button class="add">＋</button></article><article class="card c1" data-g="drama" data-t="Lost Found"><span class="score">★ 8.3</span><div class="meta"><b>Lost &amp; Found</b><span>2025 · Drama</span></div><button class="add">＋</button></article></div></section></main>
-<footer class="shell"><span>© 2026 Cinewave. Made for the next watch.</span><span>Help · Privacy · Terms</span></footer><div class="toast" id="toast">Added to My List</div>
-<script>const qs=s=>document.querySelector(s),cards=[...document.querySelectorAll('.card')],toast=qs('#toast');function note(t){toast.textContent=t;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)}document.querySelectorAll('.add').forEach(b=>b.onclick=e=>{e.stopPropagation();b.classList.toggle('saved');b.textContent=b.classList.contains('saved')?'✓':'＋';note(b.classList.contains('saved')?'Added to My List':'Removed from My List')});qs('#watch').onclick=()=>note('Trailer is ready — enjoy the opening scene!');qs('#continue').onclick=()=>note('Resuming Dark Matter…');qs('#heroSave').onclick=()=>note('Beyond the Known added to My List');document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{qs('.filter.active').classList.remove('active');b.classList.add('active');cards.forEach(c=>c.style.display=b.dataset.g==='all'||c.dataset.g===b.dataset.g?'block':'none')});qs('#search').oninput=e=>cards.forEach(c=>c.style.display=c.dataset.t.toLowerCase().includes(e.target.value.toLowerCase())?'block':'none');</script>
-</body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dixon is a fictional premium IEM brand website with glassmorphism design, categories, features, and comparison tools.">
+    <title>Dixon Audio | Glass-Tuned IEMs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="Dixon home">
+          <span class="brand-mark">D</span>
+          <span class="brand-name">Dixon</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span class="menu-lines"></span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a href="features.html">Features</a>
+          <a href="compare.html">Compare</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <a class="nav-action" href="compare.html">Find your fit</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Dixon audio lab</p>
+            <h1>Dixon <span>glass-tuned IEMs</span></h1>
+            <p class="hero-copy">A full in-ear monitor line for producers, performers, gamers, and everyday listeners. Dixon blends transparent shells, punchy hybrid drivers, and a polished glass-look identity into one portable sound system.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="categories.html">Shop categories</a>
+              <a class="button secondary" href="features.html">Explore features</a>
+            </div>
+            <div class="stat-row" aria-label="Dixon quick specs">
+              <div class="stat">
+                <strong>26 dB</strong>
+                <span>passive isolation seal</span>
+              </div>
+              <div class="stat">
+                <strong>8 Hz</strong>
+                <span>low-end extension</span>
+              </div>
+              <div class="stat">
+                <strong>0.78 mm</strong>
+                <span>modular cable system</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual glass-panel" aria-label="Dixon Aurora IEM product artwork">
+            <img src="assets/hero-dixon-aurora.png" alt="A glossy pair of Dixon in-ear monitors with translucent colored faceplates">
+            <div class="hero-badge">
+              <strong>Aurora shell finish</strong>
+              Multi-layer resin, glassy faceplates, and secure angled nozzles for long listening days.
+            </div>
+            <div class="sound-meter" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <h2>Four lines, one Dixon signature.</h2>
+          <p>Pick by your listening life: critical studio work, live stage monitoring, wireless travel, or upgrade accessories.</p>
+        </div>
+        <div class="grid-4 grid-3">
+          <article class="category-card">
+            <img src="assets/category-studio.png" alt="Dixon studio IEM render">
+            <h3>Studio</h3>
+            <p>Neutral tuning for editing, mixing notes, podcast cleanup, and long desk sessions.</p>
+            <div class="tag-row">
+              <span class="tag">Flat mids</span>
+              <span class="tag">Tight bass</span>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/category-stage.png" alt="Dixon stage IEM render">
+            <h3>Stage</h3>
+            <p>Higher isolation, confident upper mids, and ergonomic shells for performers.</p>
+            <div class="tag-row">
+              <span class="tag">Secure fit</span>
+              <span class="tag">Live vocals</span>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/category-wireless.png" alt="Dixon wireless IEM render with charging case">
+            <h3>Wireless</h3>
+            <p>Adapters and carry-ready sets for low-latency listening without cable drag.</p>
+            <div class="tag-row">
+              <span class="tag">Travel case</span>
+              <span class="tag">Low latency</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <h2>Featured Dixon models.</h2>
+          <p>Each model shares the same build language, but the tuning and fit are made for different people.</p>
+        </div>
+        <div class="grid-3">
+          <article class="product-card">
+            <div class="product-top">
+              <span class="product-label">Creator pick</span>
+              <span class="price">$189</span>
+            </div>
+            <img src="assets/category-studio.png" alt="Dixon Monitor 7 studio IEM">
+            <h3>Monitor 7</h3>
+            <p>A balanced hybrid IEM for people who want accurate vocals, controlled bass, and less ear fatigue.</p>
+            <ul class="spec-list">
+              <li><span>Driver</span><strong>1 DD + 2 BA</strong></li>
+              <li><span>Sound</span><strong>Reference</strong></li>
+              <li><span>Best for</span><strong>Studio</strong></li>
+            </ul>
+          </article>
+          <article class="product-card">
+            <div class="product-top">
+              <span class="product-label">Live pick</span>
+              <span class="price">$249</span>
+            </div>
+            <img src="assets/category-stage.png" alt="Dixon Stage X IEM">
+            <h3>Stage X</h3>
+            <p>A secure performer monitor with crisp attack, strong isolation, and replaceable filters.</p>
+            <ul class="spec-list">
+              <li><span>Driver</span><strong>2 DD + 4 BA</strong></li>
+              <li><span>Sound</span><strong>Energetic</strong></li>
+              <li><span>Best for</span><strong>Stage</strong></li>
+            </ul>
+          </article>
+          <article class="product-card">
+            <div class="product-top">
+              <span class="product-label">Daily pick</span>
+              <span class="price">$139</span>
+            </div>
+            <img src="assets/category-wireless.png" alt="Dixon Pulse Wireless IEM">
+            <h3>Pulse Wireless</h3>
+            <p>A cable-free Dixon setup with a compact charging case, ambient mode, and gaming-friendly latency.</p>
+            <ul class="spec-list">
+              <li><span>Driver</span><strong>10 mm DD</strong></li>
+              <li><span>Sound</span><strong>Warm clean</strong></li>
+              <li><span>Best for</span><strong>Travel</strong></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="cta-band glass-panel">
+          <div>
+            <p class="eyebrow">Start here</p>
+            <h2>Not sure what to choose?</h2>
+            <p>Use the Dixon finder to match your use case and sound preference to a model. It is simple, fast, and built into the site.</p>
+          </div>
+          <a class="button primary" href="compare.html">Open finder</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p>&copy; 2026 Dixon Audio. Fictional brand demo website.</p>
+        <div class="footer-links">
+          <a href="categories.html">Categories</a>
+          <a href="features.html">Features</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

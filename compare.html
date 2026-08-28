@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare Dixon IEM models and use the built-in finder to choose the right pair.">
+    <title>Dixon Compare | Find Your IEM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="compare">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="Dixon home">
+          <span class="brand-mark">D</span>
+          <span class="brand-name">Dixon</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span class="menu-lines"></span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a href="features.html">Features</a>
+          <a href="compare.html">Compare</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <a class="nav-action" href="compare.html">Find your fit</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero-inner glass-panel">
+          <div>
+            <p class="eyebrow">Dixon finder</p>
+            <h1>Choose your IEM with less guessing.</h1>
+            <p>Compare the Dixon lineup by use case, sound style, driver setup, shell fit, and price. The quick finder below updates instantly when you change your preferences.</p>
+          </div>
+          <img src="assets/hero-dixon-aurora.png" alt="Dixon IEM pair for comparison page">
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="match-panel glass-panel">
+          <form class="control-stack" data-match-form>
+            <label>
+              Main use
+              <select name="use">
+                <option value="studio">Studio and creation</option>
+                <option value="stage">Stage performance</option>
+                <option value="travel">Travel and daily use</option>
+              </select>
+            </label>
+            <label>
+              Sound preference
+              <select name="sound">
+                <option value="balanced">Balanced</option>
+                <option value="warm">Warm</option>
+                <option value="energetic">Energetic</option>
+              </select>
+            </label>
+          </form>
+          <div class="match-result" aria-live="polite">
+            <p class="eyebrow">Recommended match</p>
+            <h2 data-match-title>Dixon Monitor 7</h2>
+            <p data-match-text>Neutral mids, tight low end, and a calmer treble for editing long sessions.</p>
+            <div class="match-score" aria-label="Recommendation confidence">
+              <span data-match-score></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <h2>Model comparison.</h2>
+          <p>A fast overview of price, tuning, fit, and ideal listener for each Dixon model.</p>
+        </div>
+        <div class="compare-table-wrap glass-panel">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Driver</th>
+                <th>Tuning</th>
+                <th>Fit</th>
+                <th>Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monitor 7</td>
+                <td>$189</td>
+                <td>1 DD + 2 BA</td>
+                <td>Reference balanced</td>
+                <td>Medium universal</td>
+                <td>Mixing, editing, acoustic music</td>
+              </tr>
+              <tr>
+                <td>Stage X</td>
+                <td>$249</td>
+                <td>2 DD + 4 BA</td>
+                <td>Energetic and clear</td>
+                <td>Deep secure seal</td>
+                <td>Performers, vocalists, drummers</td>
+              </tr>
+              <tr>
+                <td>Aura One</td>
+                <td>$159</td>
+                <td>10 mm DD + BA</td>
+                <td>Warm clean</td>
+                <td>Compact universal</td>
+                <td>Long sessions, playlists, streaming</td>
+              </tr>
+              <tr>
+                <td>Pulse Wireless</td>
+                <td>$139</td>
+                <td>10 mm DD</td>
+                <td>Warm balanced</td>
+                <td>Hook-supported</td>
+                <td>Travel, calls, casual gaming</td>
+              </tr>
+              <tr>
+                <td>Neon Lite</td>
+                <td>$99</td>
+                <td>Single DD</td>
+                <td>Bright and punchy</td>
+                <td>Small universal</td>
+                <td>Practice, first IEM, mobile listening</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p>&copy; 2026 Dixon Audio. Fictional brand demo website.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

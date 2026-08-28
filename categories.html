@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dixon IEM categories including studio, stage, wireless, and accessories.">
+    <title>Dixon Categories | IEM Lineup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="categories">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="Dixon home">
+          <span class="brand-mark">D</span>
+          <span class="brand-name">Dixon</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span class="menu-lines"></span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a href="features.html">Features</a>
+          <a href="compare.html">Compare</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <a class="nav-action" href="compare.html">Find your fit</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero-inner glass-panel">
+          <div>
+            <p class="eyebrow">Dixon catalog</p>
+            <h1>Categories for every listening role.</h1>
+            <p>Browse the Dixon family by how you listen: reference detail for studio work, stability for stage, wireless comfort for travel, and modular accessories for upgrades.</p>
+          </div>
+          <img src="assets/category-studio.png" alt="Dixon studio IEM category render">
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <h2>Shop by category.</h2>
+          <p>Each category has a slightly different tuning goal, shell fit, and accessory bundle.</p>
+        </div>
+        <div class="grid-2">
+          <article class="category-card">
+            <img src="assets/category-studio.png" alt="Studio IEMs with blue and dark translucent shells">
+            <h3>Studio IEMs</h3>
+            <p>Balanced monitors for producers, editors, streamers, and musicians who want truthful mids and stable imaging.</p>
+            <div class="tag-row">
+              <span class="tag">Monitor 7</span>
+              <span class="tag">Aura One</span>
+              <span class="tag">Reference filters</span>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/category-stage.png" alt="Stage IEMs with coral and green accents">
+            <h3>Stage IEMs</h3>
+            <p>High isolation, faster attack, and grip-focused shells for singers, guitarists, drummers, and live techs.</p>
+            <div class="tag-row">
+              <span class="tag">Stage X</span>
+              <span class="tag">Foam tips</span>
+              <span class="tag">Locking cable</span>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/category-wireless.png" alt="Wireless IEMs with a compact charging case">
+            <h3>Wireless Kits</h3>
+            <p>Everyday Dixon sound with a pocket charging case, ambient mode, low latency, and detachable ear hooks.</p>
+            <div class="tag-row">
+              <span class="tag">Pulse Wireless</span>
+              <span class="tag">Gaming mode</span>
+              <span class="tag">Ambient mode</span>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/category-accessories.png" alt="Dixon replacement ear tips and cable accessories">
+            <h3>Accessories</h3>
+            <p>Replacement cables, tuning filters, balanced adapters, silicone tips, foam tips, and hard-shell carry cases.</p>
+            <div class="tag-row">
+              <span class="tag">Cables</span>
+              <span class="tag">Tips</span>
+              <span class="tag">Filters</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <h2>Filter the lineup.</h2>
+          <p>Use the buttons to narrow the product cards without leaving the page.</p>
+        </div>
+        <div class="filter-bar" aria-label="Product category filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="studio">Studio</button>
+          <button class="filter-button" type="button" data-filter="stage">Stage</button>
+          <button class="filter-button" type="button" data-filter="wireless">Wireless</button>
+          <button class="filter-button" type="button" data-filter="accessories">Accessories</button>
+        </div>
+        <div class="grid-3">
+          <article class="product-card" data-category="studio">
+            <div class="product-top">
+              <span class="product-label">Studio</span>
+              <span class="price">$189</span>
+            </div>
+            <img src="assets/category-studio.png" alt="Dixon Monitor 7">
+            <h3>Monitor 7</h3>
+            <p>Neutral reference model with smooth treble and firm bass control.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Mixing</strong></li>
+              <li><span>Cable</span><strong>Balanced ready</strong></li>
+              <li><span>Shell</span><strong>Medium</strong></li>
+            </ul>
+          </article>
+          <article class="product-card" data-category="studio">
+            <div class="product-top">
+              <span class="product-label">Studio</span>
+              <span class="price">$159</span>
+            </div>
+            <img src="assets/hero-dixon-aurora.png" alt="Dixon Aura One">
+            <h3>Aura One</h3>
+            <p>Warm, clean tuning for creators who move between work and casual listening.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Editing</strong></li>
+              <li><span>Cable</span><strong>Silver-plated</strong></li>
+              <li><span>Shell</span><strong>Compact</strong></li>
+            </ul>
+          </article>
+          <article class="product-card" data-category="stage">
+            <div class="product-top">
+              <span class="product-label">Stage</span>
+              <span class="price">$249</span>
+            </div>
+            <img src="assets/category-stage.png" alt="Dixon Stage X">
+            <h3>Stage X</h3>
+            <p>High-output hybrid design with punchy transients and upgraded isolation.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Live sets</strong></li>
+              <li><span>Cable</span><strong>Locking 2-pin</strong></li>
+              <li><span>Shell</span><strong>Secure</strong></li>
+            </ul>
+          </article>
+          <article class="product-card" data-category="stage">
+            <div class="product-top">
+              <span class="product-label">Stage</span>
+              <span class="price">$99</span>
+            </div>
+            <img src="assets/category-stage.png" alt="Dixon Neon Lite">
+            <h3>Neon Lite</h3>
+            <p>Entry performer model with bright vocals and a lightweight fit.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Practice</strong></li>
+              <li><span>Cable</span><strong>Soft braid</strong></li>
+              <li><span>Shell</span><strong>Small</strong></li>
+            </ul>
+          </article>
+          <article class="product-card" data-category="wireless">
+            <div class="product-top">
+              <span class="product-label">Wireless</span>
+              <span class="price">$139</span>
+            </div>
+            <img src="assets/category-wireless.png" alt="Dixon Pulse Wireless">
+            <h3>Pulse Wireless</h3>
+            <p>Charging case, detachable hooks, and an easy-going Dixon tuning.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Travel</strong></li>
+              <li><span>Battery</span><strong>30 hours</strong></li>
+              <li><span>Mode</span><strong>Low latency</strong></li>
+            </ul>
+          </article>
+          <article class="product-card" data-category="accessories">
+            <div class="product-top">
+              <span class="product-label">Accessories</span>
+              <span class="price">$39</span>
+            </div>
+            <img src="assets/category-accessories.png" alt="Dixon cable and ear tip kit">
+            <h3>Fit Kit Pro</h3>
+            <p>Five tip sizes, two tuning filters, cable clip, and a compact hard case.</p>
+            <ul class="spec-list">
+              <li><span>Use</span><strong>Upgrade</strong></li>
+              <li><span>Tips</span><strong>Foam + silicone</strong></li>
+              <li><span>Case</span><strong>Included</strong></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p>&copy; 2026 Dixon Audio. Fictional brand demo website.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="compare.html">Compare</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
