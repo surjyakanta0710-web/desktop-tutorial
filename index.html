@@ -1,15 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Progrgram
-    </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Serein — a focused space for thoughtful work.">
+  <title>Serein — Make space for what matters</title>
+  <style>
+    :root { --ink:#14213d; --muted:#60708a; --line:#dce5f0; --paper:#f7f8fc; --peach:#ffbe8a; --blue:#3772ff; --night:#102442; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    nav { height:78px; display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; gap:10px; align-items:center; font-size:1.25rem; font-weight:800; letter-spacing:-.04em; }
+    .mark { display:grid; place-items:center; width:30px; height:30px; border-radius:10px; color:white; background:var(--blue); transform:rotate(-9deg); }
+    .links { display:flex; align-items:center; gap:28px; color:#4f607b; font-size:.92rem; font-weight:600; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:13px 19px; border-radius:12px; font-weight:750; font-size:.94rem; transition:transform .2s,box-shadow .2s; }
+    .button:hover { transform:translateY(-2px); box-shadow:0 12px 24px rgba(55,114,255,.2); }
+    .button.primary { color:white; background:var(--blue); }
+    .button.ghost { border:1px solid var(--line); background:white; }
+    .hero { padding:78px 0 104px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:62px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px; border:1px solid #cbd8ff; color:#3159be; background:#edf2ff; padding:8px 11px; border-radius:999px; font-size:.78rem; font-weight:800; letter-spacing:.03em; }
+    .eyebrow i { width:7px; height:7px; background:#6d9cff; border-radius:50%; }
+    h1 { margin:18px 0 18px; max-width:640px; font-size:clamp(3.1rem,6vw,5.7rem); line-height:.96; letter-spacing:-.075em; }
+    h1 em { font-style:normal; color:var(--blue); }
+    .lede { max-width:540px; color:var(--muted); font-size:1.1rem; line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .trust { margin-top:27px; color:#7d8ba2; font-size:.85rem; }
+    .visual { position:relative; min-height:450px; }
+    .orb { position:absolute; width:318px; height:318px; right:16px; top:16px; border-radius:50%; background:linear-gradient(135deg,#ffccaa 0%,#ffe2c8 40%,#c6dcff 100%); }
+    .card { position:absolute; background:rgba(255,255,255,.88); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.85); border-radius:22px; box-shadow:0 22px 55px rgba(30,57,101,.16); }
+    .dashboard { inset:65px 0 10px 35px; padding:22px; overflow:hidden; }
+    .topline { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; font-weight:800; }
+    .dots { display:flex; gap:5px; }.dots span { width:7px; height:7px; border-radius:50%; background:#dce5f0; }.dots span:first-child { background:var(--peach); }
+    .task { display:flex; align-items:center; gap:12px; padding:15px; margin-top:10px; border:1px solid #edf0f6; border-radius:14px; background:#fff; font-size:.87rem; font-weight:700; }
+    .check { width:19px; height:19px; border:2px solid #aebbd0; border-radius:6px; }.task.done .check { border-color:#88d7c3; background:#d9f8ee; }.task.done { color:#71809a; text-decoration:line-through; }
+    .mini { right:-14px; top:0; width:165px; padding:15px; }.mini b { display:block; font-size:.76rem; }.bars { display:flex; gap:6px; height:59px; align-items:end; margin-top:13px; }.bars span { flex:1; border-radius:5px 5px 2px 2px; background:#cbd9ff; }.bars span:nth-child(2),.bars span:nth-child(4) { background:var(--blue); }
+    .note { left:0; bottom:0; padding:15px 17px; width:184px; background:#fff3e8; transform:rotate(-5deg); font-size:.8rem; line-height:1.45; }.note strong { display:block; margin-bottom:4px; }
+    .strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:#fff; padding:22px 0; }.logos { display:flex; justify-content:space-between; gap:20px; color:#8b98aa; font-size:.9rem; font-weight:800; letter-spacing:.08em; }
+    .features { padding:110px 0; }.section-head { max-width:610px; }.section-head h2 { font-size:clamp(2rem,4vw,3.4rem); letter-spacing:-.06em; line-height:1; margin:14px 0; }.section-head p { color:var(--muted); line-height:1.65; }
+    .feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:40px; }.feature { padding:28px; min-height:245px; border:1px solid var(--line); border-radius:20px; background:#fff; }.icon { display:grid; place-items:center; width:42px; height:42px; border-radius:13px; background:#e9efff; color:var(--blue); font-weight:900; }.feature h3 { margin:30px 0 10px; font-size:1.15rem; letter-spacing:-.03em; }.feature p { margin:0; color:var(--muted); font-size:.93rem; line-height:1.6; }
+    .cta { margin:10px 0 80px; padding:58px; border-radius:28px; color:white; background:var(--night); display:flex; align-items:center; justify-content:space-between; gap:30px; overflow:hidden; position:relative; }.cta:after { content:""; position:absolute; right:-70px; top:-100px; width:290px; height:290px; border:44px solid rgba(86,139,255,.23); border-radius:50%; }.cta h2 { position:relative; z-index:1; max-width:590px; margin:0; font-size:clamp(2rem,4vw,3.4rem); letter-spacing:-.06em; line-height:1; }.cta .button { position:relative; z-index:1; flex:none; color:#14213d; background:#fff; }
+    footer { padding:0 0 34px; color:#71809a; font-size:.85rem; display:flex; justify-content:space-between; }
+    @media (max-width:760px) { nav { height:68px; }.links a:not(.button) { display:none; }.hero { grid-template-columns:1fr; padding:55px 0 65px; gap:30px; }.visual { min-height:380px; }.dashboard { left:12px; }.feature-grid { grid-template-columns:1fr; }.logos { flex-wrap:wrap; justify-content:center; }.cta { padding:38px 26px; align-items:flex-start; flex-direction:column; } footer { gap:15px; flex-direction:column; } }
+  </style>
 </head>
 <body>
-<h3  style="color:red"> SAROJ I love you .</h3>
-<A href="/profile.html"> profile <img src = "saroj.jpeg" height="300" 
-    "> 
-     </A>
+  <header class="wrap">
+    <nav>
+      <a class="brand" href="#top"><span class="mark">✦</span> serein</a>
+      <div class="links"><a href="#features">Features</a><a href="#about">About</a><a class="button primary" href="#start">Start for free</a></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div>
+        <span class="eyebrow"><i></i> A calmer way to work</span>
+        <h1>Make space for <em>what matters.</em></h1>
+        <p class="lede">Serein turns scattered intentions into a clear, gentle rhythm—so your best work gets the attention it deserves.</p>
+        <div class="actions"><a class="button primary" href="#start">Create your space →</a><a class="button ghost" href="#features">Explore the flow</a></div>
+        <p class="trust">No credit card · Built for focused humans</p>
+      </div>
+      <div class="visual" aria-label="A preview of the Serein workspace">
+        <div class="orb"></div>
+        <div class="card dashboard"><div class="topline"><span>Today, gently.</span><span class="dots"><span></span><span></span><span></span></span></div><div class="task"><span class="check"></span>Shape the next idea</div><div class="task done"><span class="check">✓</span>Clear the small things</div><div class="task"><span class="check"></span>Make time to think</div></div>
+        <div class="card mini"><b>Weekly rhythm</b><div class="bars"><span style="height:35%"></span><span style="height:72%"></span><span style="height:48%"></span><span style="height:91%"></span><span style="height:57%"></span></div></div>
+        <div class="card note"><strong>One kind reminder</strong> Progress has its own pace.</div>
+      </div>
+    </section>
+    <section class="strip"><div class="wrap logos"><span>DESIGNERS</span><span>MAKERS</span><span>STUDENTS</span><span>THOUGHTFUL TEAMS</span></div></section>
+    <section class="features wrap" id="features"><div class="section-head"><span class="eyebrow">Designed for clarity</span><h2>Less noise. More momentum.</h2><p>Every detail is intentionally quiet, so you can spend less energy managing work and more energy making it meaningful.</p></div><div class="feature-grid"><article class="feature"><div class="icon">01</div><h3>One honest list</h3><p>Keep priorities visible without turning your day into a maze of tabs, badges, and notifications.</p></article><article class="feature"><div class="icon">02</div><h3>Gentle structure</h3><p>Shape a rhythm around your real capacity with simple weekly views and meaningful pauses.</p></article><article class="feature"><div class="icon">03</div><h3>Room to reflect</h3><p>Notice what moved forward, what needs care, and where you want to place your attention next.</p></article></div></section>
+    <section class="wrap" id="start"><div class="cta"><h2>Your attention is valuable. Spend it with intention.</h2><a class="button" href="mailto:hello@example.com?subject=I%20want%20to%20try%20Serein">Begin your calm</a></div></section>
+  </main>
+  <footer class="wrap" id="about"><span>© 2026 Serein. Made with a little more breathing room.</span><span>Privacy · Terms</span></footer>
 </body>
 </html>
